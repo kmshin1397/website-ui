@@ -1,0 +1,27 @@
+<div class="top-bg bg"></div>
+<div class="mid">
+    <div class="logos">
+        <div #stripL class="strip strip-l"></div>
+        <div #espresso class="logo">
+            <app-logo
+                [type]="'espresso'"
+                [size]="150"
+                (hovered)="hoverLogo($event, 'espresso')"
+            ></app-logo>
+        </div>
+        <div #stripM class="strip strip-m"></div>
+        <div #coffee class="logo">
+            <app-logo
+                [type]="'coffee'"
+                [size]="150"
+                (hovered)="hoverLogo($event, 'coffee')"
+            ></app-logo>
+        </div>
+        <div #stripR class="strip strip-r"></div>
+    </div>
+</div>
+<div class="bot-bg bg"></div>
+<div class="header">
+    <h1>KYUNG MIN SHIN</h1>
+    <h2>An over-caffeinated developer's website</h2>
+</div>

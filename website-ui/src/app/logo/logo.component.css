@@ -1,7 +1,24 @@
 .logo {
-    fill: #fff2e6;
+    fill: white;
 }
 
-div:hover {
+.logo-box {
+    transform: translate(0, -15%);
+}
+
+.logo-box:hover {
     cursor: pointer;
+}
+
+.profile {
+    border-radius: 50%;
+    border: 5px solid white;
+}
+
+h3 {
+    color: white;
+    text-align: center;
+    /* text-decoration: underline; */
+    font-family: 'Work Sans', sans-serif;
+    letter-spacing: 0.1em;
 }

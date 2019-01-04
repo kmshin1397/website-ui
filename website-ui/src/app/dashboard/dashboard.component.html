@@ -1,4 +1,3 @@
-<div class="top-bg bg"></div>
 <div class="mid">
     <div class="logos">
         <div #stripL class="strip strip-l"></div>
@@ -10,6 +9,10 @@
             ></app-logo>
         </div>
         <div #stripM class="strip strip-m"></div>
+        <div class="profile">
+            <app-logo [type]="'profile'" [size]="150"></app-logo>
+        </div>
+        <div #stripM2 class="strip strip-m"></div>
         <div #coffee class="logo">
             <app-logo
                 [type]="'coffee'"
@@ -20,8 +23,27 @@
         <div #stripR class="strip strip-r"></div>
     </div>
 </div>
-<div class="bot-bg bg"></div>
+<div class="background"></div>
 <div class="header">
-    <h1>KYUNG MIN SHIN</h1>
-    <h2>An over-caffeinated developer's website</h2>
+    <div>
+        <h1>HI, I'M KYUNG</h1>
+        <h2>an over-caffeinated developer</h2>
+    </div>
+</div>
+<div #introText class="text active">
+    <h2>Make a coffee selection to begin...</h2>
+</div>
+<div #espressoText class="text">
+    <h2><b>ESPRESSO</b></h2>
+    <h3>
+        n. Strong coffee served in a concentrated "shot",<br />
+        just as a resume concentrates an individual onto a single page.
+    </h3>
+</div>
+<div #coffeeText class="text">
+    <h2><b>BREWED COFFEE</b></h2>
+    <h3>
+        n. Coffee made slowly through drip or filter,<br />
+        likened to the deliberate thoughts of a blog post.
+    </h3>
 </div>

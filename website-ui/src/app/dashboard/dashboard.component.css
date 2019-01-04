@@ -1,29 +1,70 @@
 .header {
     position: fixed;
-    top: 15%;
+    top: 5%;
     left: 50%;
-    transform: translate(-50%, -50%);
-    color: #fff2e6;
+    width: fit-content;
+    transform: translate(-50%, -5%);
+    color: white;
     z-index: 9;
+    display: flex;
+    text-align: center;
+    align-items: center;
+    justify-content: flex-start;
+    font-family: 'Work Sans', sans-serif;
+    letter-spacing: 0.2rem;
+    /* border: 5px solid white; */
+    padding: 25px;
+    opacity: 0.9;
+    text-shadow: 2px 2px black;
+    /* box-shadow: 2px 2px black; */
+}
+
+.header h1 {
+    font-size: 250%;
+}
+
+.header div {
+    flex: 0 1 auto;
+    /* margin-right: 15px; */
+}
+
+.text {
+    position: fixed;
+    bottom: 15%;
+    left: 50%;
+    transform: translate(-50%, 15%);
+    color: white;
+    z-index: 9;
+    /* display: flex; */
+    text-align: center;
+    align-items: center;
+    /* justify-content: flex-start; */
+    font-family: 'Work Sans', sans-serif;
+    letter-spacing: 0.2rem;
+    padding: 25px;
+    text-shadow: 2px 2px black;
+    width: fit-content;
+    opacity: 0;
+}
+
+.text h3 {
+    padding-right: 10px;
+}
+
+.background {
+    height: 100vh;
+    width: 100vw;
+    /* background: rgb(20, 10, 0); */
+    /* background: #fff2e6; */
+    background-image: url('../../assets/CoffeeAndLaptop.jpg');
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    background-size: cover;
 }
 
 .bg {
     height: 50vh;
     width: 100vw;
-}
-
-.top-bg {
-    position: fixed;
-    top: 0;
-    left: 0;
-    background: rgb(20, 10, 0);
-}
-
-.bot-bg {
-    position: fixed;
-    bottom: 0;
-    left: 0;
-    background: rgb(56, 56, 56);
 }
 
 .mid {
@@ -37,12 +78,12 @@
 .strip {
     margin: 0;
     height: 1vh;
-    background-color: #fff2e6;
-    opacity: 0.5;
+    background-color: white;
+    opacity: 0.7;
 }
 
 .strip-l {
-    flex: 1 1 25vw;
+    flex: 1 1 15vw;
 }
 
 .strip-m {
@@ -50,7 +91,7 @@
 }
 
 .strip-r {
-    flex: 1 1 25vw;
+    flex: 1 1 15vw;
 }
 
 .logos {
@@ -63,5 +104,17 @@
     flex: 0 2 150px;
     /* background-color: rgb(20, 10, 0); */
     z-index: 1;
-    opacity: 0.6;
+    opacity: 0.7;
+}
+
+.profile {
+    flex: 0 2 150px;
+    z-index: 1;
+    opacity: 0.9;
+}
+
+.active {
+    opacity: 1;
+    transition: opacity 0.4s;
+    transition-timing-function: cubic-bezier(0, 0, 0.25, 1);
 }

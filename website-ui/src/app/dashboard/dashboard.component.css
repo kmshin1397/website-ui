@@ -56,7 +56,7 @@
     width: 100vw;
     /* background: rgb(20, 10, 0); */
     /* background: #fff2e6; */
-    background-image: url('../../assets/CoffeeAndLaptop.jpg');
+    background-image: url('../../assets/test2.jpg');
     background-repeat: no-repeat;
     background-position: right bottom;
     background-size: cover;
@@ -79,7 +79,8 @@
     margin: 0;
     height: 1vh;
     background-color: white;
-    opacity: 0.7;
+    opacity: 0.6;
+    box-shadow: 2px 2px 2px black;
 }
 
 .strip-l {
@@ -103,7 +104,7 @@
 .logo {
     flex: 0 2 150px;
     /* background-color: rgb(20, 10, 0); */
-    z-index: 1;
+    z-index: 2;
     opacity: 0.7;
 }
 

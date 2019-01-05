@@ -12,7 +12,6 @@ export class LogoComponent implements OnInit {
 
     @Input()
     set type(type: string) {
-        console.log(type);
         if (type === 'espresso') {
             this.espresso = true;
         } else if (type === 'coffee') {

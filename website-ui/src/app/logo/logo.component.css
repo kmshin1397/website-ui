@@ -4,6 +4,7 @@
 
 .logo-box {
     transform: translate(0, -15%);
+    text-shadow: 2px 2px black;
 }
 
 .logo-box:hover {
@@ -13,6 +14,7 @@
 .profile {
     border-radius: 50%;
     border: 5px solid white;
+    box-shadow: 2px 2px black;
 }
 
 h3 {
@@ -21,4 +23,10 @@ h3 {
     /* text-decoration: underline; */
     font-family: 'Work Sans', sans-serif;
     letter-spacing: 0.1em;
+}
+
+.shadow {
+    /* Use -webkit- only if supporting: Chrome < 54, iOS < 9.3, Android < 4.4.4 */
+    -webkit-filter: drop-shadow(2px 2px 2px #000);
+    filter: drop-shadow(2px 2px 2px #000);
 }
